@@ -1,0 +1,120 @@
+\doxysection{Trama\+Map Class Reference}
+\hypertarget{classTramaMap}{}\label{classTramaMap}\index{TramaMap@{TramaMap}}
+
+
+Representa una Trama de Mapeo (MAP).  
+
+
+
+
+{\ttfamily \#include $<$Trama\+Base.\+h$>$}
+
+Inheritance diagram for Trama\+Map\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classTramaMap}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTramaMap_a2944d3df98fd07caec790c58b61961a4}{Trama\+Map}} (int N)
+\begin{DoxyCompactList}\small\item\em Constructor de \doxylink{classTramaMap}{Trama\+Map}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTramaMap_a82856228a8b90d1d776ab22e3ae2cc5e}{\texorpdfstring{$\sim$}{\string~}\+Trama\+Map}} () override
+\item 
+void \mbox{\hyperlink{classTramaMap_a2108fdc79edbd189744fdc3d287a687d}{procesar}} (\mbox{\hyperlink{classListaDeCarga}{Lista\+De\+Carga}} \texorpdfstring{$\ast$}{*}carga, \mbox{\hyperlink{classRotorDeMapeo}{Rotor\+De\+Mapeo}} \texorpdfstring{$\ast$}{*}rotor) override
+\begin{DoxyCompactList}\small\item\em Procesa la trama, modificando el estado de la \doxylink{classListaDeCarga}{Lista\+De\+Carga} y/o el \doxylink{classRotorDeMapeo}{Rotor\+De\+Mapeo}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classTramaBase}{Trama\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classTramaBase_a18ebfa4d2bfccd937d095d31fbb0aa95}{\texorpdfstring{$\sim$}{\string~}\+Trama\+Base}} ()
+\begin{DoxyCompactList}\small\item\em Destructor virtual obligatorio para la correcta liberación de memoria polimórfica. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classTramaMap_ac8ecbc63765dfb4a9792726bad817693}{rotacionN}}
+\begin{DoxyCompactList}\small\item\em Cantidad de posiciones a rotar el rotor (entero positivo o negativo). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa una Trama de Mapeo (MAP). 
+
+
+\begin{DoxyItemize}
+\item Contiene una instrucción de rotación que modifica dinámicamente el estado del \doxylink{classRotorDeMapeo}{Rotor\+De\+Mapeo}. 
+\end{DoxyItemize}
+
+\label{doc-constructors}
+\Hypertarget{classTramaMap_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classTramaMap_a2944d3df98fd07caec790c58b61961a4}\index{TramaMap@{TramaMap}!TramaMap@{TramaMap}}
+\index{TramaMap@{TramaMap}!TramaMap@{TramaMap}}
+\doxysubsubsection{\texorpdfstring{TramaMap()}{TramaMap()}}
+{\footnotesize\ttfamily \label{classTramaMap_a2944d3df98fd07caec790c58b61961a4} 
+Trama\+Map\+::\+Trama\+Map (\begin{DoxyParamCaption}\item[{int}]{N}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor de \doxylink{classTramaMap}{Trama\+Map}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em N} & El valor entero para la rotación (ej. 2 o -\/3). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classTramaMap_a82856228a8b90d1d776ab22e3ae2cc5e}\index{TramaMap@{TramaMap}!````~TramaMap@{\texorpdfstring{$\sim$}{\string~}TramaMap}}
+\index{````~TramaMap@{\texorpdfstring{$\sim$}{\string~}TramaMap}!TramaMap@{TramaMap}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}TramaMap()}{\string~TramaMap()}}
+{\footnotesize\ttfamily \label{classTramaMap_a82856228a8b90d1d776ab22e3ae2cc5e} 
+Trama\+Map\+::\texorpdfstring{$\sim$}{\string~}\+Trama\+Map (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classTramaMap_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classTramaMap_a2108fdc79edbd189744fdc3d287a687d}\index{TramaMap@{TramaMap}!procesar@{procesar}}
+\index{procesar@{procesar}!TramaMap@{TramaMap}}
+\doxysubsubsection{\texorpdfstring{procesar()}{procesar()}}
+{\footnotesize\ttfamily \label{classTramaMap_a2108fdc79edbd189744fdc3d287a687d} 
+void Trama\+Map\+::procesar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classListaDeCarga}{Lista\+De\+Carga}} \texorpdfstring{$\ast$}{*}}]{carga}{, }\item[{\mbox{\hyperlink{classRotorDeMapeo}{Rotor\+De\+Mapeo}} \texorpdfstring{$\ast$}{*}}]{rotor}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Procesa la trama, modificando el estado de la \doxylink{classListaDeCarga}{Lista\+De\+Carga} y/o el \doxylink{classRotorDeMapeo}{Rotor\+De\+Mapeo}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em carga} & Puntero a la \doxylink{classListaDeCarga}{Lista\+De\+Carga} donde se ensambla el mensaje. \\
+\hline
+{\em rotor} & Puntero al \doxylink{classRotorDeMapeo}{Rotor\+De\+Mapeo} (Lista Circular) que gestiona el cifrado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTramaBase_a7adf0eea6b0eb612f7eeabac637c50a9}{Trama\+Base}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classTramaMap_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classTramaMap_ac8ecbc63765dfb4a9792726bad817693}\index{TramaMap@{TramaMap}!rotacionN@{rotacionN}}
+\index{rotacionN@{rotacionN}!TramaMap@{TramaMap}}
+\doxysubsubsection{\texorpdfstring{rotacionN}{rotacionN}}
+{\footnotesize\ttfamily \label{classTramaMap_ac8ecbc63765dfb4a9792726bad817693} 
+int Trama\+Map\+::rotacionN\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Cantidad de posiciones a rotar el rotor (entero positivo o negativo). 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{TramaBase_8h}{Trama\+Base.\+h}}\item 
+src/\mbox{\hyperlink{TramaBase_8cpp}{Trama\+Base.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,81 @@
+\doxysection{Trama\+Base Class Reference}
+\hypertarget{classTramaBase}{}\label{classTramaBase}\index{TramaBase@{TramaBase}}
+
+
+Clase Base Abstracta (ABC) para todas las tramas del protocolo PRT-\/7.  
+
+
+
+
+{\ttfamily \#include $<$Trama\+Base.\+h$>$}
+
+Inheritance diagram for Trama\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classTramaBase}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classTramaBase_a7adf0eea6b0eb612f7eeabac637c50a9}{procesar}} (\mbox{\hyperlink{classListaDeCarga}{Lista\+De\+Carga}} \texorpdfstring{$\ast$}{*}carga, \mbox{\hyperlink{classRotorDeMapeo}{Rotor\+De\+Mapeo}} \texorpdfstring{$\ast$}{*}rotor)=0
+\begin{DoxyCompactList}\small\item\em Procesa la trama, modificando el estado de la \doxylink{classListaDeCarga}{Lista\+De\+Carga} y/o el \doxylink{classRotorDeMapeo}{Rotor\+De\+Mapeo}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classTramaBase_a18ebfa4d2bfccd937d095d31fbb0aa95}{\texorpdfstring{$\sim$}{\string~}\+Trama\+Base}} ()
+\begin{DoxyCompactList}\small\item\em Destructor virtual obligatorio para la correcta liberación de memoria polimórfica. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase Base Abstracta (ABC) para todas las tramas del protocolo PRT-\/7. 
+
+
+\begin{DoxyItemize}
+\item Define la interfaz polimórfica que todas las tramas (Load y Map) deben implementar. 
+\end{DoxyItemize}
+
+\label{doc-constructors}
+\Hypertarget{classTramaBase_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classTramaBase_a18ebfa4d2bfccd937d095d31fbb0aa95}\index{TramaBase@{TramaBase}!````~TramaBase@{\texorpdfstring{$\sim$}{\string~}TramaBase}}
+\index{````~TramaBase@{\texorpdfstring{$\sim$}{\string~}TramaBase}!TramaBase@{TramaBase}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}TramaBase()}{\string~TramaBase()}}
+{\footnotesize\ttfamily \label{classTramaBase_a18ebfa4d2bfccd937d095d31fbb0aa95} 
+virtual Trama\+Base\+::\texorpdfstring{$\sim$}{\string~}\+Trama\+Base (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destructor virtual obligatorio para la correcta liberación de memoria polimórfica. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{classTramaBase_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classTramaBase_a7adf0eea6b0eb612f7eeabac637c50a9}\index{TramaBase@{TramaBase}!procesar@{procesar}}
+\index{procesar@{procesar}!TramaBase@{TramaBase}}
+\doxysubsubsection{\texorpdfstring{procesar()}{procesar()}}
+{\footnotesize\ttfamily \label{classTramaBase_a7adf0eea6b0eb612f7eeabac637c50a9} 
+virtual void Trama\+Base\+::procesar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classListaDeCarga}{Lista\+De\+Carga}} \texorpdfstring{$\ast$}{*}}]{carga}{, }\item[{\mbox{\hyperlink{classRotorDeMapeo}{Rotor\+De\+Mapeo}} \texorpdfstring{$\ast$}{*}}]{rotor}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Procesa la trama, modificando el estado de la \doxylink{classListaDeCarga}{Lista\+De\+Carga} y/o el \doxylink{classRotorDeMapeo}{Rotor\+De\+Mapeo}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em carga} & Puntero a la \doxylink{classListaDeCarga}{Lista\+De\+Carga} donde se ensambla el mensaje. \\
+\hline
+{\em rotor} & Puntero al \doxylink{classRotorDeMapeo}{Rotor\+De\+Mapeo} (Lista Circular) que gestiona el cifrado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classTramaLoad_ade8ff3faef2c7319ea34da8a53bd5896}{Trama\+Load}}, and \mbox{\hyperlink{classTramaMap_a2108fdc79edbd189744fdc3d287a687d}{Trama\+Map}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{TramaBase_8h}{Trama\+Base.\+h}}\end{DoxyCompactItemize}

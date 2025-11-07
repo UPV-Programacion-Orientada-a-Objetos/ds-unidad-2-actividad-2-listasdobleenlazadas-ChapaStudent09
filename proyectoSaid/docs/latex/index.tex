@@ -1,0 +1,31 @@
+\chapter{Decodificador de Protocolo PRT-\/7 }
+\hypertarget{index}{}\label{index}\index{Decodificador de Protocolo PRT-\/7@{Decodificador de Protocolo PRT-\/7}}
+
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}\hypertarget{index_intro}{}\doxysection{\texorpdfstring{Introducción}{Introducción}}\label{index_intro}
+
+\begin{DoxyItemize}
+\item Este proyecto implementa un decodificador de protocolo industrial PRT-\/7, un mecanismo de ofuscación de telemetría que utiliza un protocolo de ensamblaje de mensajes. El sistema fue construido en C++ con estricta prohibición del uso de la Standard Template Library (STL).
+\item 
+\end{DoxyItemize}\hypertarget{index_arquitectura}{}\doxysection{\texorpdfstring{Arquitectura y Componentes}{Arquitectura y Componentes}}\label{index_arquitectura}
+
+\begin{DoxyItemize}
+\item El decodificador se basa en principios de Programación Orientada a Objetos (POO) avanzada, utilizando punteros manuales para la gestión de memoria y las estructuras de datos.
+\item Los componentes clave son\+:
+\item -\/ {\bfseries{\doxylink{classTramaBase}{Trama\+Base} / \doxylink{classTramaLoad}{Trama\+Load} / \doxylink{classTramaMap}{Trama\+Map}\+:}} Jerarquía polimórfica para procesar instrucciones.
+\item {\bfseries{\doxylink{classRotorDeMapeo}{Rotor\+De\+Mapeo}\+:}} Implementado como una Lista Circular Doblemente Enlazada que actúa como un disco de cifrado rotatorio.
+\item {\bfseries{\doxylink{classListaDeCarga}{Lista\+De\+Carga}\+:}} Implementado como una Lista Doblemente Enlazada para ensamblar el mensaje final decodificado.
+\item 
+\end{DoxyItemize}\hypertarget{index_ejecucion}{}\doxysection{\texorpdfstring{Ejecución (Simulada)}{Ejecución (Simulada)}}\label{index_ejecucion}
+
+\begin{DoxyItemize}
+\item El programa espera tramas de texto desde la entrada estándar (simulando un puerto serial)\+:
+\end{DoxyItemize}
+\begin{DoxyEnumerate}
+\item {\bfseries{Tramas LOAD (L,X)\+:}} Almacenan un fragmento de dato \textquotesingle{}X\textquotesingle{} después de ser mapeado por el Rotor.
+\item {\bfseries{Tramas MAP (M,N)\+:}} Rotan el Rotor \textquotesingle{}N\textquotesingle{} posiciones, cambiando el estado de decodificación.
+\end{DoxyEnumerate}
+\begin{DoxyItemize}
+\item {\bfseries{Requisitos de Compilación\+:}} CMake y Doxygen. 
+\end{DoxyItemize}

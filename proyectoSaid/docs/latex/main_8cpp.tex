@@ -1,0 +1,67 @@
+\doxysection{src/main.cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{src/main.cpp@{src/main.cpp}}
+
+
+Implementación del Decodificador PRT-\/7 para Ciberseguridad Industrial.  
+
+
+{\ttfamily \#include "{}Trama\+Base.\+h"{}}\newline
+{\ttfamily \#include "{}Lista\+De\+Carga.\+h"{}}\newline
+{\ttfamily \#include "{}Rotor\+De\+Mapeo.\+h"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTramaBase}{Trama\+Base}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{main_8cpp_a0c65604cc32ca20234ca1d66f9c481bf}{parsear\+YCrear\+Trama}} (char \texorpdfstring{$\ast$}{*}linea)
+\begin{DoxyCompactList}\small\item\em Parsea una línea de texto de la trama y crea el objeto Trama\+Base\texorpdfstring{$\ast$}{*} polimórfico. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Función principal del decodificador PRT-\/7. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementación del Decodificador PRT-\/7 para Ciberseguridad Industrial. 
+
+
+\begin{DoxyItemize}
+\item Este programa lee un flujo de tramas (LOAD y MAP) desde la entrada estándar (simulando el puerto serial) y ensambla un mensaje oculto utilizando POO polimórfica y estructuras de datos manuales (Lista Doble y Lista Circular). \begin{DoxyAuthor}{Author}
+Gemini (AI Assistant) 
+\end{DoxyAuthor}
+
+\end{DoxyItemize}
+
+\label{doc-func-members}
+\Hypertarget{main_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Función principal del decodificador PRT-\/7. 
+
+\begin{DoxyReturn}{Returns}
+int Código de salida del programa. 
+\end{DoxyReturn}
+\Hypertarget{main_8cpp_a0c65604cc32ca20234ca1d66f9c481bf}\index{main.cpp@{main.cpp}!parsearYCrearTrama@{parsearYCrearTrama}}
+\index{parsearYCrearTrama@{parsearYCrearTrama}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{parsearYCrearTrama()}{parsearYCrearTrama()}}
+{\footnotesize\ttfamily \label{main_8cpp_a0c65604cc32ca20234ca1d66f9c481bf} 
+\mbox{\hyperlink{classTramaBase}{Trama\+Base}} \texorpdfstring{$\ast$}{*} parsear\+YCrear\+Trama (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{linea}{}\end{DoxyParamCaption})}
+
+
+
+Parsea una línea de texto de la trama y crea el objeto Trama\+Base\texorpdfstring{$\ast$}{*} polimórfico. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em linea} & La línea de texto leída (ej. "{}\+L,\+H"{} o "{}\+M,-\/2"{}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Trama\+Base\texorpdfstring{$\ast$}{*} Un puntero a \doxylink{classTramaLoad}{Trama\+Load} o \doxylink{classTramaMap}{Trama\+Map}, o nullptr si el parsing falla. 
+\end{DoxyReturn}

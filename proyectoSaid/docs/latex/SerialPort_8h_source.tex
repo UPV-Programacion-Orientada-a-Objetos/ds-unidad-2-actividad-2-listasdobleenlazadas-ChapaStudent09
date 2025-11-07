@@ -1,0 +1,27 @@
+\doxysection{Serial\+Port.\+h}
+\hypertarget{SerialPort_8h_source}{}\label{SerialPort_8h_source}\index{include/SerialPort.h@{include/SerialPort.h}}
+\mbox{\hyperlink{SerialPort_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ SerialPort.h}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ SERIALPORT\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ SERIALPORT\_H}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSerialPort_aca7d6ec84770df9715926afd3226454b}{SerialPort}}\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{comment}{//\ En\ un\ proyecto\ real,\ se\ usaría\ una\ librería\ (Serialib/Boost\ Asio)\ o\ APIs\ nativas\ (Win32/POSIX)}}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSerialPort_ae0fe8f3f5fc8a7834578ecc041117b7c}{open}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ portName,\ \textcolor{keywordtype}{int}\ baudRate);}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSerialPort_a4021438c34d654f517b93ef9e19a8504}{readLine}}(\textcolor{keywordtype}{char}*\ buffer,\ \textcolor{keywordtype}{int}\ maxLen);}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSerialPort_a94d1ee3a3af45ef4f74a77f2dea2ec56}{close}}();}
+\DoxyCodeLine{00013\ \ \ \ \ }
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{comment}{//\ En\ este\ caso\ de\ estudio,\ la\ lectura\ será\ SIMULADA\ en\ main.cpp,}}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{comment}{//\ pero\ se\ mantiene\ la\ interfaz\ para\ la\ futura\ integración.}}
+\DoxyCodeLine{00016\ \ \ \ \ }
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{classSerialPort_aca7d6ec84770df9715926afd3226454b}{SerialPort}}()\ \{\}}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{classSerialPort_a8e09f366ed9b26b0456b66ae7bd8c702}{\string~SerialPort}}()\ \{\}}
+\DoxyCodeLine{00019\ \};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SERIALPORT\_H}}
+
+\end{DoxyCode}

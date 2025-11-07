@@ -1,0 +1,118 @@
+\doxysection{Lista\+De\+Carga Class Reference}
+\hypertarget{classListaDeCarga}{}\label{classListaDeCarga}\index{ListaDeCarga@{ListaDeCarga}}
+
+
+Implementa la Lista Doblemente Enlazada Manual para ensamblar el mensaje.  
+
+
+
+
+{\ttfamily \#include $<$Lista\+De\+Carga.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classListaDeCarga_ad45449e2427d1ebc6f31c737a213d7d6}{Lista\+De\+Carga}} ()
+\item 
+\mbox{\hyperlink{classListaDeCarga_aa2082ca43fa7ead69098c33963096276}{\texorpdfstring{$\sim$}{\string~}\+Lista\+De\+Carga}} ()
+\item 
+void \mbox{\hyperlink{classListaDeCarga_a6c659099ea4a85ff3a8ae2de024dfdc0}{insertar\+Al\+Final}} (char dato)
+\begin{DoxyCompactList}\small\item\em Inserta un nuevo carácter decodificado al final de la lista. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classListaDeCarga_a90f5187002875f9a4bc856db5d86ff35}{imprimir\+Mensaje}} ()
+\begin{DoxyCompactList}\small\item\em Imprime el mensaje ensamblado completo en una sola línea. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structNodoCarga}{Nodo\+Carga}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classListaDeCarga_a037d87f0df95ef9ef73acba589b06bb6}{cabeza}}
+\begin{DoxyCompactList}\small\item\em Puntero al primer nodo de la lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structNodoCarga}{Nodo\+Carga}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classListaDeCarga_ac065b33bb27a7a9f5fe4cc8eb7610fef}{cola}}
+\begin{DoxyCompactList}\small\item\em Puntero al último nodo de la lista. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementa la Lista Doblemente Enlazada Manual para ensamblar el mensaje. 
+
+
+\begin{DoxyItemize}
+\item Almacena los caracteres decodificados en el orden de llegada. 
+\end{DoxyItemize}
+
+\label{doc-constructors}
+\Hypertarget{classListaDeCarga_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classListaDeCarga_ad45449e2427d1ebc6f31c737a213d7d6}\index{ListaDeCarga@{ListaDeCarga}!ListaDeCarga@{ListaDeCarga}}
+\index{ListaDeCarga@{ListaDeCarga}!ListaDeCarga@{ListaDeCarga}}
+\doxysubsubsection{\texorpdfstring{ListaDeCarga()}{ListaDeCarga()}}
+{\footnotesize\ttfamily \label{classListaDeCarga_ad45449e2427d1ebc6f31c737a213d7d6} 
+Lista\+De\+Carga\+::\+Lista\+De\+Carga (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classListaDeCarga_aa2082ca43fa7ead69098c33963096276}\index{ListaDeCarga@{ListaDeCarga}!````~ListaDeCarga@{\texorpdfstring{$\sim$}{\string~}ListaDeCarga}}
+\index{````~ListaDeCarga@{\texorpdfstring{$\sim$}{\string~}ListaDeCarga}!ListaDeCarga@{ListaDeCarga}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ListaDeCarga()}{\string~ListaDeCarga()}}
+{\footnotesize\ttfamily \label{classListaDeCarga_aa2082ca43fa7ead69098c33963096276} 
+Lista\+De\+Carga\+::\texorpdfstring{$\sim$}{\string~}\+Lista\+De\+Carga (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classListaDeCarga_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classListaDeCarga_a90f5187002875f9a4bc856db5d86ff35}\index{ListaDeCarga@{ListaDeCarga}!imprimirMensaje@{imprimirMensaje}}
+\index{imprimirMensaje@{imprimirMensaje}!ListaDeCarga@{ListaDeCarga}}
+\doxysubsubsection{\texorpdfstring{imprimirMensaje()}{imprimirMensaje()}}
+{\footnotesize\ttfamily \label{classListaDeCarga_a90f5187002875f9a4bc856db5d86ff35} 
+void Lista\+De\+Carga\+::imprimir\+Mensaje (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Imprime el mensaje ensamblado completo en una sola línea. 
+
+\Hypertarget{classListaDeCarga_a6c659099ea4a85ff3a8ae2de024dfdc0}\index{ListaDeCarga@{ListaDeCarga}!insertarAlFinal@{insertarAlFinal}}
+\index{insertarAlFinal@{insertarAlFinal}!ListaDeCarga@{ListaDeCarga}}
+\doxysubsubsection{\texorpdfstring{insertarAlFinal()}{insertarAlFinal()}}
+{\footnotesize\ttfamily \label{classListaDeCarga_a6c659099ea4a85ff3a8ae2de024dfdc0} 
+void Lista\+De\+Carga\+::insertar\+Al\+Final (\begin{DoxyParamCaption}\item[{char}]{dato}{}\end{DoxyParamCaption})}
+
+
+
+Inserta un nuevo carácter decodificado al final de la lista. 
+
+
+\begin{DoxyItemize}
+\item Se usa para mantener el orden cronológico del mensaje ensamblado. 
+\begin{DoxyParams}{Parameters}
+{\em dato} & El carácter decodificado a almacenar. \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
+
+\label{doc-variable-members}
+\Hypertarget{classListaDeCarga_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classListaDeCarga_a037d87f0df95ef9ef73acba589b06bb6}\index{ListaDeCarga@{ListaDeCarga}!cabeza@{cabeza}}
+\index{cabeza@{cabeza}!ListaDeCarga@{ListaDeCarga}}
+\doxysubsubsection{\texorpdfstring{cabeza}{cabeza}}
+{\footnotesize\ttfamily \label{classListaDeCarga_a037d87f0df95ef9ef73acba589b06bb6} 
+\mbox{\hyperlink{structNodoCarga}{Nodo\+Carga}}\texorpdfstring{$\ast$}{*} Lista\+De\+Carga\+::cabeza\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Puntero al primer nodo de la lista. 
+
+\Hypertarget{classListaDeCarga_ac065b33bb27a7a9f5fe4cc8eb7610fef}\index{ListaDeCarga@{ListaDeCarga}!cola@{cola}}
+\index{cola@{cola}!ListaDeCarga@{ListaDeCarga}}
+\doxysubsubsection{\texorpdfstring{cola}{cola}}
+{\footnotesize\ttfamily \label{classListaDeCarga_ac065b33bb27a7a9f5fe4cc8eb7610fef} 
+\mbox{\hyperlink{structNodoCarga}{Nodo\+Carga}}\texorpdfstring{$\ast$}{*} Lista\+De\+Carga\+::cola\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Puntero al último nodo de la lista. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{ListaDeCarga_8h}{Lista\+De\+Carga.\+h}}\item 
+src/\mbox{\hyperlink{ListaDeCarga_8cpp}{Lista\+De\+Carga.\+cpp}}\end{DoxyCompactItemize}

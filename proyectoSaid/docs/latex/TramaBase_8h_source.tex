@@ -1,0 +1,43 @@
+\doxysection{Trama\+Base.\+h}
+\hypertarget{TramaBase_8h_source}{}\label{TramaBase_8h_source}\index{include/TramaBase.h@{include/TramaBase.h}}
+\mbox{\hyperlink{TramaBase_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ TramaBase.h}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ TRAMABASE\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ TRAMABASE\_H}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ListaDeCarga_8h}{ListaDeCarga.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{RotorDeMapeo_8h}{RotorDeMapeo.h}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTramaBase}{TramaBase}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTramaBase_a7adf0eea6b0eb612f7eeabac637c50a9}{procesar}}(\mbox{\hyperlink{classListaDeCarga}{ListaDeCarga}}*\ carga,\ \mbox{\hyperlink{classRotorDeMapeo}{RotorDeMapeo}}*\ rotor)\ =\ 0;}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classTramaBase_a18ebfa4d2bfccd937d095d31fbb0aa95}{\string~TramaBase}}()\ \{\}}
+\DoxyCodeLine{00026\ \};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTramaLoad_a87ca5fa1ea0d9d281d63d1a43d73c4f1}{TramaLoad}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classTramaBase}{TramaBase}}\ \{}
+\DoxyCodeLine{00033\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classTramaLoad_ac4371a1ea4eed6fee015cd5600ff4d62}{datoFragmento}};\ }
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{classTramaLoad_a87ca5fa1ea0d9d281d63d1a43d73c4f1}{TramaLoad}}(\textcolor{keywordtype}{char}\ dato)\ :\ \mbox{\hyperlink{classTramaLoad_ac4371a1ea4eed6fee015cd5600ff4d62}{datoFragmento}}(dato)\ \{\}}
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{classTramaLoad_a230e802b54072347a08ba540726090ae}{\string~TramaLoad}}()\textcolor{keyword}{\ override\ }\{\}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTramaLoad_ade8ff3faef2c7319ea34da8a53bd5896}{procesar}}(\mbox{\hyperlink{classListaDeCarga}{ListaDeCarga}}*\ carga,\ \mbox{\hyperlink{classRotorDeMapeo}{RotorDeMapeo}}*\ rotor)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00045\ \};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00051\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTramaMap_a2944d3df98fd07caec790c58b61961a4}{TramaMap}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classTramaBase}{TramaBase}}\ \{}
+\DoxyCodeLine{00052\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTramaMap_ac8ecbc63765dfb4a9792726bad817693}{rotacionN}};\ }
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00060\ \ \ \ \ \mbox{\hyperlink{classTramaMap_a2944d3df98fd07caec790c58b61961a4}{TramaMap}}(\textcolor{keywordtype}{int}\ N)\ :\ \mbox{\hyperlink{classTramaMap_ac8ecbc63765dfb4a9792726bad817693}{rotacionN}}(N)\ \{\}}
+\DoxyCodeLine{00061\ \ \ \ \ \mbox{\hyperlink{classTramaMap_a82856228a8b90d1d776ab22e3ae2cc5e}{\string~TramaMap}}()\textcolor{keyword}{\ override\ }\{\}}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTramaMap_a2108fdc79edbd189744fdc3d287a687d}{procesar}}(\mbox{\hyperlink{classListaDeCarga}{ListaDeCarga}}*\ carga,\ \mbox{\hyperlink{classRotorDeMapeo}{RotorDeMapeo}}*\ rotor)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00064\ \};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TRAMABASE\_H}}
+
+\end{DoxyCode}

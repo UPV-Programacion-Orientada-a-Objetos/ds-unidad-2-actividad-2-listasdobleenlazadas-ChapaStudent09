@@ -1,0 +1,144 @@
+\doxysection{Rotor\+De\+Mapeo Class Reference}
+\hypertarget{classRotorDeMapeo}{}\label{classRotorDeMapeo}\index{RotorDeMapeo@{RotorDeMapeo}}
+
+
+Implementa el Rotor de Mapeo como una Lista Circular Doblemente Enlazada Manual.  
+
+
+
+
+{\ttfamily \#include $<$Rotor\+De\+Mapeo.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRotorDeMapeo_aa4a3be7c3ce2021244e4977e4ad856c9}{Rotor\+De\+Mapeo}} ()
+\item 
+\mbox{\hyperlink{classRotorDeMapeo_adc5f4bfe5b8d66ba7c9bac38f4be4c5c}{\texorpdfstring{$\sim$}{\string~}\+Rotor\+De\+Mapeo}} ()
+\item 
+void \mbox{\hyperlink{classRotorDeMapeo_ad79788c60ba5d4581d40907fc2120338}{inicializar}} ()
+\begin{DoxyCompactList}\small\item\em Carga los 27 caracteres (\textquotesingle{}A\textquotesingle{}-\/\textquotesingle{}Z\textquotesingle{} y \textquotesingle{} \textquotesingle{}) y configura la circularidad. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRotorDeMapeo_a3a619484f83124461714341ebb842678}{rotar}} (int N)
+\begin{DoxyCompactList}\small\item\em Rota el puntero cabeza N posiciones de forma circular. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{classRotorDeMapeo_a70d4ad4bcef4bd5cec9c8d2602859f5c}{get\+Mapeo}} (char in)
+\begin{DoxyCompactList}\small\item\em Realiza la lógica de decodificación (mapeo) basada en la rotación actual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structNodoRotor}{Nodo\+Rotor}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classRotorDeMapeo_ad53f275a653d1e2144ce8224be7eff8c}{buscar\+Nodo}} (char in)
+\begin{DoxyCompactList}\small\item\em Método auxiliar para encontrar un carácter en la lista. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structNodoRotor}{Nodo\+Rotor}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classRotorDeMapeo_a1bf5851056481db5ba287d6d6dbf2da3}{cabeza}}
+\begin{DoxyCompactList}\small\item\em Puntero al inicio lógico del rotor (determina el desplazamiento actual). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementa el Rotor de Mapeo como una Lista Circular Doblemente Enlazada Manual. 
+
+
+\begin{DoxyItemize}
+\item Actúa como un "{}disco de cifrado"{} rotatorio que contiene el alfabeto (A-\/Z, \textquotesingle{} \textquotesingle{}). 
+\end{DoxyItemize}
+
+\label{doc-constructors}
+\Hypertarget{classRotorDeMapeo_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classRotorDeMapeo_aa4a3be7c3ce2021244e4977e4ad856c9}\index{RotorDeMapeo@{RotorDeMapeo}!RotorDeMapeo@{RotorDeMapeo}}
+\index{RotorDeMapeo@{RotorDeMapeo}!RotorDeMapeo@{RotorDeMapeo}}
+\doxysubsubsection{\texorpdfstring{RotorDeMapeo()}{RotorDeMapeo()}}
+{\footnotesize\ttfamily \label{classRotorDeMapeo_aa4a3be7c3ce2021244e4977e4ad856c9} 
+Rotor\+De\+Mapeo\+::\+Rotor\+De\+Mapeo (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classRotorDeMapeo_adc5f4bfe5b8d66ba7c9bac38f4be4c5c}\index{RotorDeMapeo@{RotorDeMapeo}!````~RotorDeMapeo@{\texorpdfstring{$\sim$}{\string~}RotorDeMapeo}}
+\index{````~RotorDeMapeo@{\texorpdfstring{$\sim$}{\string~}RotorDeMapeo}!RotorDeMapeo@{RotorDeMapeo}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}RotorDeMapeo()}{\string~RotorDeMapeo()}}
+{\footnotesize\ttfamily \label{classRotorDeMapeo_adc5f4bfe5b8d66ba7c9bac38f4be4c5c} 
+Rotor\+De\+Mapeo\+::\texorpdfstring{$\sim$}{\string~}\+Rotor\+De\+Mapeo (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classRotorDeMapeo_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classRotorDeMapeo_ad53f275a653d1e2144ce8224be7eff8c}\index{RotorDeMapeo@{RotorDeMapeo}!buscarNodo@{buscarNodo}}
+\index{buscarNodo@{buscarNodo}!RotorDeMapeo@{RotorDeMapeo}}
+\doxysubsubsection{\texorpdfstring{buscarNodo()}{buscarNodo()}}
+{\footnotesize\ttfamily \label{classRotorDeMapeo_ad53f275a653d1e2144ce8224be7eff8c} 
+\mbox{\hyperlink{structNodoRotor}{Nodo\+Rotor}} \texorpdfstring{$\ast$}{*} Rotor\+De\+Mapeo\+::buscar\+Nodo (\begin{DoxyParamCaption}\item[{char}]{in}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Método auxiliar para encontrar un carácter en la lista. 
+
+\Hypertarget{classRotorDeMapeo_a70d4ad4bcef4bd5cec9c8d2602859f5c}\index{RotorDeMapeo@{RotorDeMapeo}!getMapeo@{getMapeo}}
+\index{getMapeo@{getMapeo}!RotorDeMapeo@{RotorDeMapeo}}
+\doxysubsubsection{\texorpdfstring{getMapeo()}{getMapeo()}}
+{\footnotesize\ttfamily \label{classRotorDeMapeo_a70d4ad4bcef4bd5cec9c8d2602859f5c} 
+char Rotor\+De\+Mapeo\+::get\+Mapeo (\begin{DoxyParamCaption}\item[{char}]{in}{}\end{DoxyParamCaption})}
+
+
+
+Realiza la lógica de decodificación (mapeo) basada en la rotación actual. 
+
+
+\begin{DoxyItemize}
+\item Calcula el carácter decodificado tomando la posición relativa del fragmento \textquotesingle{}in\textquotesingle{} respecto al inicio original (\textquotesingle{}A\textquotesingle{}) y aplicando el desplazamiento actual de \textquotesingle{}cabeza\textquotesingle{}. 
+\begin{DoxyParams}{Parameters}
+{\em in} & Carácter a decodificar (fragmento de la \doxylink{classTramaLoad}{Trama\+Load}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char Carácter decodificado. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}\Hypertarget{classRotorDeMapeo_ad79788c60ba5d4581d40907fc2120338}\index{RotorDeMapeo@{RotorDeMapeo}!inicializar@{inicializar}}
+\index{inicializar@{inicializar}!RotorDeMapeo@{RotorDeMapeo}}
+\doxysubsubsection{\texorpdfstring{inicializar()}{inicializar()}}
+{\footnotesize\ttfamily \label{classRotorDeMapeo_ad79788c60ba5d4581d40907fc2120338} 
+void Rotor\+De\+Mapeo\+::inicializar (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Carga los 27 caracteres (\textquotesingle{}A\textquotesingle{}-\/\textquotesingle{}Z\textquotesingle{} y \textquotesingle{} \textquotesingle{}) y configura la circularidad. 
+
+\Hypertarget{classRotorDeMapeo_a3a619484f83124461714341ebb842678}\index{RotorDeMapeo@{RotorDeMapeo}!rotar@{rotar}}
+\index{rotar@{rotar}!RotorDeMapeo@{RotorDeMapeo}}
+\doxysubsubsection{\texorpdfstring{rotar()}{rotar()}}
+{\footnotesize\ttfamily \label{classRotorDeMapeo_a3a619484f83124461714341ebb842678} 
+void Rotor\+De\+Mapeo\+::rotar (\begin{DoxyParamCaption}\item[{int}]{N}{}\end{DoxyParamCaption})}
+
+
+
+Rota el puntero cabeza N posiciones de forma circular. 
+
+
+\begin{DoxyItemize}
+\item Mueve el puntero cabeza sin mover los datos, implementando la rotación eficiente. 
+\begin{DoxyParams}{Parameters}
+{\em N} & Número de posiciones a rotar (positivo\+: adelante, negativo\+: atrás). \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
+
+\label{doc-variable-members}
+\Hypertarget{classRotorDeMapeo_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classRotorDeMapeo_a1bf5851056481db5ba287d6d6dbf2da3}\index{RotorDeMapeo@{RotorDeMapeo}!cabeza@{cabeza}}
+\index{cabeza@{cabeza}!RotorDeMapeo@{RotorDeMapeo}}
+\doxysubsubsection{\texorpdfstring{cabeza}{cabeza}}
+{\footnotesize\ttfamily \label{classRotorDeMapeo_a1bf5851056481db5ba287d6d6dbf2da3} 
+\mbox{\hyperlink{structNodoRotor}{Nodo\+Rotor}}\texorpdfstring{$\ast$}{*} Rotor\+De\+Mapeo\+::cabeza\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Puntero al inicio lógico del rotor (determina el desplazamiento actual). 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{RotorDeMapeo_8h}{Rotor\+De\+Mapeo.\+h}}\item 
+src/\mbox{\hyperlink{RotorDeMapeo_8cpp}{Rotor\+De\+Mapeo.\+cpp}}\end{DoxyCompactItemize}

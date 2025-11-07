@@ -1,0 +1,3 @@
+/home/christopher/proyectoSaid/build/CMakeFiles/prt7_decoder.dir
+/home/christopher/proyectoSaid/build/CMakeFiles/edit_cache.dir
+/home/christopher/proyectoSaid/build/CMakeFiles/rebuild_cache.dir

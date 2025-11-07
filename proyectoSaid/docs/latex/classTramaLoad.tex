@@ -1,0 +1,120 @@
+\doxysection{Trama\+Load Class Reference}
+\hypertarget{classTramaLoad}{}\label{classTramaLoad}\index{TramaLoad@{TramaLoad}}
+
+
+Representa una Trama de Carga (LOAD).  
+
+
+
+
+{\ttfamily \#include $<$Trama\+Base.\+h$>$}
+
+Inheritance diagram for Trama\+Load\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classTramaLoad}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTramaLoad_a87ca5fa1ea0d9d281d63d1a43d73c4f1}{Trama\+Load}} (char dato)
+\begin{DoxyCompactList}\small\item\em Constructor de \doxylink{classTramaLoad}{Trama\+Load}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTramaLoad_a230e802b54072347a08ba540726090ae}{\texorpdfstring{$\sim$}{\string~}\+Trama\+Load}} () override
+\item 
+void \mbox{\hyperlink{classTramaLoad_ade8ff3faef2c7319ea34da8a53bd5896}{procesar}} (\mbox{\hyperlink{classListaDeCarga}{Lista\+De\+Carga}} \texorpdfstring{$\ast$}{*}carga, \mbox{\hyperlink{classRotorDeMapeo}{Rotor\+De\+Mapeo}} \texorpdfstring{$\ast$}{*}rotor) override
+\begin{DoxyCompactList}\small\item\em Procesa la trama, modificando el estado de la \doxylink{classListaDeCarga}{Lista\+De\+Carga} y/o el \doxylink{classRotorDeMapeo}{Rotor\+De\+Mapeo}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classTramaBase}{Trama\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classTramaBase_a18ebfa4d2bfccd937d095d31fbb0aa95}{\texorpdfstring{$\sim$}{\string~}\+Trama\+Base}} ()
+\begin{DoxyCompactList}\small\item\em Destructor virtual obligatorio para la correcta liberación de memoria polimórfica. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{classTramaLoad_ac4371a1ea4eed6fee015cd5600ff4d62}{dato\+Fragmento}}
+\begin{DoxyCompactList}\small\item\em Carácter de dato a decodificar (ej. \textquotesingle{}H\textquotesingle{} en L,H). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa una Trama de Carga (LOAD). 
+
+
+\begin{DoxyItemize}
+\item Contiene un fragmento de dato (un carácter) que debe ser decodificado usando la rotación actual. 
+\end{DoxyItemize}
+
+\label{doc-constructors}
+\Hypertarget{classTramaLoad_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classTramaLoad_a87ca5fa1ea0d9d281d63d1a43d73c4f1}\index{TramaLoad@{TramaLoad}!TramaLoad@{TramaLoad}}
+\index{TramaLoad@{TramaLoad}!TramaLoad@{TramaLoad}}
+\doxysubsubsection{\texorpdfstring{TramaLoad()}{TramaLoad()}}
+{\footnotesize\ttfamily \label{classTramaLoad_a87ca5fa1ea0d9d281d63d1a43d73c4f1} 
+Trama\+Load\+::\+Trama\+Load (\begin{DoxyParamCaption}\item[{char}]{dato}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor de \doxylink{classTramaLoad}{Trama\+Load}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dato} & El carácter a almacenar y decodificar. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classTramaLoad_a230e802b54072347a08ba540726090ae}\index{TramaLoad@{TramaLoad}!````~TramaLoad@{\texorpdfstring{$\sim$}{\string~}TramaLoad}}
+\index{````~TramaLoad@{\texorpdfstring{$\sim$}{\string~}TramaLoad}!TramaLoad@{TramaLoad}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}TramaLoad()}{\string~TramaLoad()}}
+{\footnotesize\ttfamily \label{classTramaLoad_a230e802b54072347a08ba540726090ae} 
+Trama\+Load\+::\texorpdfstring{$\sim$}{\string~}\+Trama\+Load (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classTramaLoad_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classTramaLoad_ade8ff3faef2c7319ea34da8a53bd5896}\index{TramaLoad@{TramaLoad}!procesar@{procesar}}
+\index{procesar@{procesar}!TramaLoad@{TramaLoad}}
+\doxysubsubsection{\texorpdfstring{procesar()}{procesar()}}
+{\footnotesize\ttfamily \label{classTramaLoad_ade8ff3faef2c7319ea34da8a53bd5896} 
+void Trama\+Load\+::procesar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classListaDeCarga}{Lista\+De\+Carga}} \texorpdfstring{$\ast$}{*}}]{carga}{, }\item[{\mbox{\hyperlink{classRotorDeMapeo}{Rotor\+De\+Mapeo}} \texorpdfstring{$\ast$}{*}}]{rotor}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Procesa la trama, modificando el estado de la \doxylink{classListaDeCarga}{Lista\+De\+Carga} y/o el \doxylink{classRotorDeMapeo}{Rotor\+De\+Mapeo}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em carga} & Puntero a la \doxylink{classListaDeCarga}{Lista\+De\+Carga} donde se ensambla el mensaje. \\
+\hline
+{\em rotor} & Puntero al \doxylink{classRotorDeMapeo}{Rotor\+De\+Mapeo} (Lista Circular) que gestiona el cifrado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTramaBase_a7adf0eea6b0eb612f7eeabac637c50a9}{Trama\+Base}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classTramaLoad_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classTramaLoad_ac4371a1ea4eed6fee015cd5600ff4d62}\index{TramaLoad@{TramaLoad}!datoFragmento@{datoFragmento}}
+\index{datoFragmento@{datoFragmento}!TramaLoad@{TramaLoad}}
+\doxysubsubsection{\texorpdfstring{datoFragmento}{datoFragmento}}
+{\footnotesize\ttfamily \label{classTramaLoad_ac4371a1ea4eed6fee015cd5600ff4d62} 
+char Trama\+Load\+::dato\+Fragmento\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Carácter de dato a decodificar (ej. \textquotesingle{}H\textquotesingle{} en L,H). 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{TramaBase_8h}{Trama\+Base.\+h}}\item 
+src/\mbox{\hyperlink{TramaBase_8cpp}{Trama\+Base.\+cpp}}\end{DoxyCompactItemize}
